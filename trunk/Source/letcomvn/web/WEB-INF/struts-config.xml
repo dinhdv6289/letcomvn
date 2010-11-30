@@ -7,6 +7,7 @@
 
 <struts-config>
     <form-beans>
+        <form-bean name="ProductForm" type="letcomvn.form.ProductForm"/>
     
     </form-beans>
     
@@ -15,11 +16,12 @@
     </global-exceptions>
 
     <global-forwards>
-        <forward name="welcome"  path="/Welcome.do"/>
     </global-forwards>
 
     <action-mappings>
-        <action path="/Welcome" forward="/welcomeStruts.jsp"/>
+        <action parameter="method" name="ProductForm" path="/productList" scope="request" type="letcomvn.action.ProductAction" validate="false">
+            <forward name="success" path="/index.jsp"/>
+        </action>
     </action-mappings>
     
     <controller processorClass="org.apache.struts.tiles.TilesRequestProcessor"/>
