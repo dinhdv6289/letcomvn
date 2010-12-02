@@ -13,7 +13,8 @@ go
 create table Categories(
 	categoryID int identity primary key,
 	categoryName nvarchar(50) not null,
-	description ntext
+	description ntext,
+	priorityDisplay int
 )
 
 go
@@ -27,7 +28,8 @@ create table Products(
 	price float not null,
 	picture nvarchar(255),
 	features nvarchar(500),
-	description ntext
+	description ntext,
+	priorityDisplay int
 
 )
 GO
@@ -65,3 +67,24 @@ create table Exhibitions(
 	ExhibitionTime datetime,
 	ExhibitionPlace nvarchar(100)	
 )
+
+go
+-- 
+--IF EXISTS (SELECT * FROM SYSOBJECTS WHERE NAME = 'Menu' AND TYPE = 'U')
+--DROP TABLE Menu
+--GO
+--CREATE TABLE Menu(
+--	MenuId int identity(1,1) primary key,
+--	MenuName nvarchar(200) not null,
+--	MenuPriority int
+--)
+--go
+--IF EXISTS (SELECT * FROM SYSOBJECTS WHERE NAME = 'SubMenu' AND TYPE = 'U')
+--DROP TABLE SubMenu
+--GO
+--CREATE TABLE SubMenu(
+--	SubMenuId int identity(1,1) primary key,
+--	SubMenuName nvarchar(200) not null,
+--	SubMenuPriority int
+--)
+--go
