@@ -1,0 +1,207 @@
+.ddsmoothmenu{
+	float:left;
+	font-size:12px;
+	padding:3px 0px 0px 0px;
+}
+
+.ddsmoothmenu ul{
+	z-index:100;
+	margin: 0;
+	padding: 0;
+	list-style-type: none;
+}
+
+.ddsmoothmenu ul li{
+	position: relative;
+	display: inline;
+	float: left;
+	padding:0px 10px;
+	cursor:pointer;
+	z-index:999999 !important;
+}
+
+.ddsmoothmenu ul li a.toplevl{
+	display: block;
+	color: white;
+	padding: 0px 0px 0px 10px;
+	color: #FFF;
+	text-decoration: none;
+	text-transform:uppercase;
+	height:30px;
+	background-repeat:no-repeat;
+	background-position:left;
+}
+.ddsmoothmenu ul li a.toplevl span.nvlink{
+	padding: 7px 10px 0px 0px;
+	height:23px;
+	background-repeat:no-repeat;
+	background-position:right;
+	display:inline-block;
+}
+.ddsmoothmenu ul li a.toplevl span.nvlinkdown{
+	padding: 7px 10px 0px 0px;
+	height:23px;
+	background-repeat:no-repeat;
+	background-position:82% 50%;
+	display:inline-block;
+}
+.ddsmoothmenu ul li a.toplevl:hover{
+	display: block;
+	color: white;
+	padding: 0px 0px 0px 10px;
+	color: #FFF;
+	text-decoration: none;
+	text-transform:uppercase;
+	height:30px;
+	background-image:url(../images/simplebtn.gif);
+	background-repeat:no-repeat;
+	background-position:left;
+}
+.ddsmoothmenu ul li a.toplevl:hover span.nvlink{
+	padding: 7px 10px 0px 0px;
+	height:23px;
+	background-image:url(../images/simplebtn.gif);
+	background-repeat:no-repeat;
+	background-position:right;
+	display:inline-block;
+}
+.ddsmoothmenu ul li a.toplevl:hover span.nvlinkdown{
+	padding: 7px 10px 0px 0px;
+	height:23px;
+	background-image:url(../images/simplebtndown.gif);
+	background-repeat:no-repeat;
+	background-position:right;
+	display:inline-block;
+}
+span.down {
+	display:inline-block;
+	width:7px !important;
+	height:4px;
+	background-repeat:no-repeat;
+	margin:5px 0px 0px 5px;
+	float:right;
+	overflow:hidden !important;
+	position:fixed;
+}
+* html .ddsmoothmenu ul li a{
+	display: inline-block;
+}
+
+.ddsmoothmenu ul li a:link, .ddsmoothmenu ul li a:visited{
+	color: #fff;
+}
+.ddsmoothmenu ul li a:hover{
+	color: #113074 !important;
+}
+.ddsmoothmenu ul li a.selected{ 
+	display: block;
+	color: white;
+	padding: 0px 0px 0px 10px;
+	color: #113074;
+	text-decoration: none;
+	text-transform:uppercase;
+	height:30px;
+	background-image:url(../images/simplebtn.gif);
+	background-repeat:no-repeat;
+	background-position:left;
+}
+.ddsmoothmenu ul li a.selected span.nvlink{
+	padding: 7px 10px 0px 0px;
+	height:23px;
+	background-image:url(../images/simplebtn.gif);
+	background-repeat:no-repeat;
+	background-position:right;
+	display:inline-block;
+}
+.ddsmoothmenu ul li a.selected span.nvlinkdown{
+	padding: 7px 10px 0px 0px;
+	height:23px;
+	background-image:url(../images/simplebtndown.gif);
+	background-repeat:no-repeat;
+	background-position:right;
+	display:inline-block;
+}
+.ddsmoothmenu ul li a:hover{
+	text-decoration:underline;
+}
+
+.ddsmoothmenu ul li ul{
+	position: absolute;
+	left: 0px;
+	margin-left:10px !important;
+	display: none;
+	visibility: hidden;
+	width:184px;
+	background-color:#d7d7d7;
+	background-image:url(../images/dropdown.gif);
+	background-repeat:repeat-x;
+}
+
+
+.ddsmoothmenu ul li ul li{
+	display: list-item;
+	float: none;
+	padding:0px 0px !important;
+	width:184px;
+	background-image:url(../images/navi_bg.png);
+	background-repeat:repeat-y;
+}
+.ddsmoothmenu ul li ul li.first{
+	padding:10px 0px 0px 0px !important;
+	background-image:url(../images/navi_top.png) !important;
+	background-repeat:no-repeat !important;
+	background-position:top !important;
+}
+.ddsmoothmenu ul li ul li.last{
+	padding:0px 0px 5px 0px !important;
+	background-image:url(../images/navi_down.png) !important;
+	background-repeat:no-repeat !important;
+	background-position:bottom !important;
+}
+
+
+.ddsmoothmenu ul li ul li ul{
+	top: 0;
+}
+
+
+.ddsmoothmenu ul li ul li a{
+	margin: 0;
+	border-top-width: 0;
+	width:167px !important;
+	padding:6px 7px;
+	display:inline-block;
+	margin-left:2px;
+	color:#666666 !important;
+}
+
+
+* html .ddsmoothmenu{height: 1%;}
+
+
+
+
+.downarrowclass{
+	position: absolute;
+	top: 12px;
+	right: 7px;
+}
+
+.rightarrowclass{
+	position: absolute;
+	top: 6px;
+	right: 5px;
+}
+
+
+.ddshadow{
+	position: absolute;
+	left: 0;
+	top: 0;
+	width: 0;
+	height: 0;
+}
+
+.toplevelshadow{
+	
+}
