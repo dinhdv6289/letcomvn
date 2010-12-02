@@ -1,0 +1,42 @@
+.sliderwrapper{
+position: relative; /*leave as is*/
+overflow: hidden; /*leave as is*/
+width: 302px; /*width of featured content slider*/
+height: 210px;
+}
+
+
+
+.sliderwrapper .contentdiv{
+visibility: hidden; /*leave as is*/
+position: absolute; /*leave as is*/
+left: 0;  /*leave as is*/
+top: 0;  /*leave as is*/
+width: 302px; /*width of content DIVs within slider. Total width should equal slider's inner width (390+5+5=400) */
+height: 210px;
+color:#FFF;
+}
+
+.pagination{
+	float:left;
+}
+
+
+.pagination a.prev{
+	width:44px;
+	height:21px;
+	background-image:url(../images/top.gif);
+	background-repeat:no-repeat;
+	display:inline-block;
+}
+.pagination a.next{
+	width:44px;
+	height:21px;
+	background-image:url(../images/bottom.gif);
+	background-repeat:no-repeat;
+	display:inline-block;
+}
+
+.toc {
+	display:none;
+}
