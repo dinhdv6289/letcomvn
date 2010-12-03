@@ -1,14 +1,14 @@
 <%-- 
-    Document   : product
-    Created on : Dec 1, 2010, 11:52:55 AM
+    Document   : blog
+    Created on : Dec 1, 2010, 11:37:44 AM
     Author     : DINHDV
 --%>
 
 <%@page contentType="text/html" pageEncoding="UTF-8"%>
+<jsp:useBean id="partnerBean" class="letcomvn.bo.PartnerBO"/>
+<%@taglib uri="/WEB-INF/struts-logic.tld" prefix="logic" %>
 <%@taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c" %>
-<%@taglib  uri="/WEB-INF/struts-logic.tld" prefix="logic" %>
-<jsp:useBean id="categoryBean" class="letcomvn.bo.CategoryBO"/>
-<jsp:useBean id="productBean" class="letcomvn.bo.ProductBO" />
+<%@taglib  uri="http://java.sun.com/jsp/jstl/functions" prefix="function" %>
 <html xmlns="http://www.w3.org/1999/xhtml">
     <head>
         <meta content="text/html; charset=utf-8" http-equiv="Content-Type"></meta>
@@ -29,8 +29,7 @@
         <script src="js/menu.js" type="text/javascript"></script>
         <script src="js/contentslider.js" type="text/javascript"></script>
         <script src="js/ddaccordion.js" type="text/javascript"></script>
-        <script src="js/acordin.js" type="text/javascript"></script>
-        <style type="text/css">
+        <script src="js/acordin.js" type="text/javascript"></script><style type="text/css">
             .categoryitems{display: none}
             a.hiddenajaxlink{display: none}
         </style><style type="text/css">
@@ -40,21 +39,20 @@
         <script src="js/paging.js" type="text/javascript"></script>
         <script src="js/jquery.fancybox-1.3.1.js" type="text/javascript"></script>
         <script src="js/lightbox.js" type="text/javascript"></script>
-        <script src="js/cufon-yui.js" type="text/javascript"></script>
-        <style type="text/css">@media screen,projection{.cufon-canvas{display:inline;display:inline-block;position:relative;vertical-align:middle;font-size:1px;line-height:1px}.cufon-canvas .cufon-alt{display:none}.cufon-canvas canvas{position:relative}}@media print{.cufon-canvas{padding:0 !important}.cufon-canvas canvas{display:none}.cufon-canvas .cufon-alt{display:inline}}</style>
+        <script src="js/cufon-yui.js" type="text/javascript"></script><style type="text/css">@media screen,projection{.cufon-canvas{display:inline;display:inline-block;position:relative;vertical-align:middle;font-size:1px;line-height:1px}.cufon-canvas .cufon-alt{display:none}.cufon-canvas canvas{position:relative}}@media print{.cufon-canvas{padding:0 !important}.cufon-canvas canvas{display:none}.cufon-canvas .cufon-alt{display:inline}}</style>
         <script src="js/cufon.js" type="text/javascript"></script>
         <script src="js/Trebuchet_MS_400-Trebuchet_MS_700-Trebuchet_MS_italic_700-Trebuchet_MS_italic_400.font.js" type="text/javascript"></script>
     </head>
     <body>
         <div class="ddshadow toplevelshadow" style="left: 1114.55px; top: 112px;"></div>
         <div class="ddshadow toplevelshadow" style="left: 1036.05px; top: 112px;"></div>
-        <div class="ddshadow toplevelshadow" style="left: 607.25px; top: 112px;"></div>
+        <div class="ddshadow toplevelshadow" style="left: 607.25px; top: 112px; overflow: hidden; height: 0px; display: block;"></div>
         <!-- Wrapper -->
         <div id="wrapper_sec">
             <!-- Header -->
             <div id="masthead">
                 <div class="inner">
-                    <div class="logo"><a href="#"><img alt="" src="images/logolet.png"/><span style="color: #ffffff;font-size: 20px;">lasers for industrial applications</span></a></div>
+                    <div class="logo"><a href="#"><img alt="" src="images/logolet.png"/></a></div>
                     <div class="right_head">
                         <div class="search">
                             <input type="text" onfocus="if(this.value == 'Search your contents here...') { this.value = ''; }" onblur="if(this.value == '') { this.value = 'Search your contents here...'; }" name="s" id="searchBox" value="Search your contents here..."/>
@@ -77,7 +75,6 @@
                         <!-- Categories 3 Level -->
                         <div class="categoriesani">
                             <h5 class="head colr">Categories
-
                             </h5>
                             <!--                            menu doc-->
                             <%@include file="includes/menuHorizontal.jsp" %>
@@ -89,38 +86,37 @@
                         </div>
                     </div>
                     <div class="col2">
-                        <div class="shop">
-                            <div class="headingcart">
-                                <h3 class="colr">Products
-                                </h3>
-                            </div>
-                            <div class="clear"></div>
-                            <ul class="shoplist">
+                        <h3 class="colr heading">Partners
 
-                                <c:if test="${categoryBean.categoryList == null}">
-                                    Not have category.
+                        </h3>
+                        <div class="blog">
+                            <ul class="bloglist">
+                                <c:if test="${partnerBean.partnerList == null}">
+                                    Not have partners.
                                 </c:if>
-                                <c:if test="${categoryBean.categoryList != null}">
-                                    <c:forEach var="cateData" items="${categoryBean.categoryList}">
-                                        <jsp:setProperty name="productBean" property="categoryId" value="${cateData.categoryId}"/>
-                                        <c:forEach var="proData" items="${productBean.productListByCategoryId}" varStatus="no" >
-                                            <c:if test="${(no.index+1) %3 !=0}" >
-                                                <li>
-                                                    ${cateData.categoryName }
-                                                    <a class="thumb" href="viewProduct.do?method=viewDetail&proId=${proData.productId}"><img alt="${proData.productName}" src="${proData.picture}" width="162px" height="120px"/></a>
-                                                    <p><a href="viewProduct.do?method=viewDetail&proId=${proData.productId}">${proData.productName}</a></p>
-                                                    <div class="clear"></div>
-                                                </li>
-                                            </c:if>   
-                                            <c:if test="${(no.index+1)%3 ==0}" >
-                                                <li class="last">
-                                                    ${cateData.categoryName }
-                                                    <a class="thumb" href="viewProduct.do?method=viewDetail&proId=${proData.productId}"><img alt="${proData.productName}" src="${proData.picture}" width="162px" height="120px"/></a>
-                                                    <p><a href="viewProduct.do?method=viewDetail&proId=${proData.productId}">${proData.productName}</a></p>
-                                                    <div class="clear"></div>
-                                                </li>
-                                            </c:if>
-                                        </c:forEach>
+                                <c:if test="${partnerBean.partnerList != null}">
+                                    <c:forEach var="partnerDatas" items="${partnerBean.partnerList}">
+                                        <li>
+                                            <div class="thumb">
+                                                <a href="#"><img alt="" src="${partnerDatas.partnerImage}" width="164px"/></a>
+                                            </div>
+                                            <div class="desc">
+                                                <h2 class="colr">${partnerDatas.partnerName}
+
+                                                </h2>
+                                                <div class="clear"></div>
+                                                <p class="text">
+                                                    ${partnerDatas.partnerDescription}
+                                                </p>
+                                                <a class="continue colr" href="${partnerDatas.partnerWebsite}">Go</a><br/>
+                                                <c:if test="${!empty  partnerDatas.partnerDocument}">
+                                                    <a class="continue colr" href="${partnerDatas.partnerDocument}"> Document</a>
+                                                </c:if>
+                                                <c:if test="${ empty partnerDatas.partnerDocument}">
+
+                                                </c:if>
+                                            </div>
+                                        </li>
                                     </c:forEach>
                                 </c:if>
                             </ul>
@@ -148,10 +144,8 @@
             <!-- Footer -->
             <%@include file="includes/footer.jsp" %>
         </div>
-        <div id="fancybox-tmp"></div>
-        <div id="fancybox-loading"><div></div>
-
-        </div>
+        <div id="fancybox-tmp"></div><div id="fancybox-loading">
+            <div></div></div>
         <div id="fancybox-overlay"></div>
         <div id="fancybox-wrap">
             <div id="fancybox-outer">
@@ -167,8 +161,7 @@
                 <a id="fancybox-close"></a>
                 <a id="fancybox-left" href="javascript:;">
                     <span id="fancybox-left-ico" class="fancy-ico"></span>
-                </a>
-                <a id="fancybox-right" href="javascript:;">
+                </a><a id="fancybox-right" href="javascript:;">
                     <span id="fancybox-right-ico" class="fancy-ico"></span>
                 </a>
             </div>

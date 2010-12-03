@@ -8,7 +8,8 @@
 <html xmlns="http://www.w3.org/1999/xhtml">
     <head>
         <meta content="text/html; charset=utf-8" http-equiv="Content-Type"></meta>
-        <title>NGO 4</title>
+        <title>Kh&#7855;c Laser, C&#7855;t Laser, H&agrave;n Laser - Laser Marking/Laser Engraving, Laser Cutting, Laser Welding - C&ocirc;ng ty TNHH Thi&#7871;t b&#7883; v&agrave; C&ocirc;ng ngh&#7879; Laser</title>
+
         <!-- Stylesheets -->
         <link type="text/css" rel="stylesheet" href="css/style.css"></link>
         <link href="css/ddsmoothmenu.css" type="text/css" rel="stylesheet"></link>
@@ -47,7 +48,7 @@
             <!-- Header -->
             <div id="masthead">
                 <div class="inner">
-                    <div class="logo"><a href="#"><img alt="" src="images/logo.png"/></a></div>
+                    <div class="logo"><a href="#"><img alt="" src="images/logolet.png"/></a></div>
                     <div class="right_head">
                         <div class="search">
                             <input type="text" onfocus="if(this.value == 'Search your contents here...') { this.value = ''; }" onblur="if(this.value == '') { this.value = 'Search your contents here...'; }" name="s" id="searchBox" value="Search your contents here..."/>
@@ -55,49 +56,7 @@
                         </div>
                         <div class="clear"></div>
                         <!-- Navigation -->
-                        <div class="navigation">
-                            <div class="ddsmoothmenu" id="smoothmenu1">
-                                <ul>
-                                    <li><a class="toplevl" href="index.html"><span class="nvlink">Home</span></a></li>
-                                    <li style="z-index: 100;"><a class="toplevl" href="#" style="padding-right: 0px;"><span class="nvlinkdown">About Us</span></a>
-                                        <ul style="display: none; top: 30px; visibility: visible;">
-                                            <li><a href="#">Our Mission</a></li>
-                                            <li><a href="#">What we Believe</a></li>
-                                            <li><a href="#">Our Partners</a></li>
-                                            <li><a href="#">Our Team</a></li>
-                                            <li><a href="#">Our Facilities</a></li>
-                                            <li><a href="#">Membership</a></li>
-                                            <li><a href="#">Directions</a></li>
-                                        </ul>
-                                    </li>
-                                    <li><a class="toplevl" href="gallery.html"><span class="nvlink">Gallery</span></a></li>
-                                    <li><a class="toplevl" href="blog.html"><span class="nvlink">Blog</span></a></li>
-                                    <li><a class="toplevl" href="shop.html"><span class="nvlink">Shop</span></a></li>
-                                    <li><a class="toplevl" href="contact.html"><span class="nvlink">Contact</span></a></li>
-                                    <li style="z-index: 99;"><a class="toplevl" href="#" style="padding-right: 0px;"><span class="nvlinkdown">Pages</span></a>
-                                        <ul style="display: none; top: 30px; visibility: visible;">
-                                            <li><a href="index.html">Home</a></li>
-                                            <li><a href="blog.html">Blog</a></li>
-                                            <li><a href="blog_post.html">Blog Post</a></li>
-                                            <li><a href="gallery.html">Gallery</a></li>
-                                            <li><a href="news.html">News</a></li>
-                                            <li><a href="shop.html">Shop</a></li>
-                                            <li><a href="contact.html">Contact Us</a></li>
-                                            <li><a href="static.html">Static</a></li>
-                                        </ul>
-                                    </li>
-                                    <li style="z-index: 98;"><a class="toplevl" href="#" style="padding-right: 0px;"><span class="nvlinkdown">Themes</span></a>
-                                        <ul style="display: none; top: 30px; visibility: visible;">
-                                            <li><a href="../blue/index.html">Blue</a></li>
-                                            <li><a href="../brown/index.html">Brown</a></li>
-                                            <li><a href="../green/index.html">Green</a></li>
-                                            <li><a href="../maroon/index.html">Maroon</a></li>
-                                        </ul>
-                                    </li>
-                                </ul>
-                                <br style="clear: left;"/>
-                            </div>
-                        </div>
+                        <%@include  file="includes/menuTop.jsp" %>
                     </div>
                 </div>
             </div>
@@ -118,8 +77,9 @@
                     <div class="col1">
                         <!-- Categories -->
                         <div class="categories">
-                            <h5 class="head colr"><span class="cufon cufon-canvas" style="width: 71px; height: 14px;"><canvas width="77" height="15" style="top: 0px; left: 0px;"></canvas>
-                                    <span class="cufon-alt">Categories</span></span></h5>
+                            <h5 class="head colr">Categories
+
+                            </h5>
                             <ul>
                                 <li class="greyback"><a href="#">Documentation</a></li>
                                 <li><a href="#">Plugins</a></li>
@@ -326,60 +286,7 @@
             </div>
             <div class="clear"></div>
             <!-- Footer -->
-            <div id="footer">
-                <div class="inner">
-                    <div class="logoleft">
-                        <div class="logobottom"><a href="#"><img alt="" src="images/logo_foot.png"/></a></div>
-                        <div class="adres">
-                            <h6><span class="cufon cufon-canvas" style="width: 61px; height: 12px;"><canvas width="67" height="13" style="top: 0px; left: 0px;"></canvas><span class="cufon-alt">Convenant</span></span></h6>
-                            <p>8490 W. Missouri Ave.<br/>
-                                Glendale, AZ 85305</p>
-                        </div>
-                        <div class="clear"></div>
-                        <ul>
-                            <li class="first"><a href="#">Home</a></li>
-                            <li><a href="#">About Faith Connections</a></li>
-                            <li><a href="#">RSS Feeds</a></li>
-                            <li><a href="#">Sitemap</a></li>
-                        </ul>
-                        <div class="clear"></div>
-                        <ul>
-                            <li class="first">&copy; 2010 Comfort Zone, All Rights Reserved</li>
-                            <li>Powered by <a href="#">ABC Incorporation</a></li>
-                        </ul>
-                    </div>
-                    <div class="sharewithus">
-                        <h6><span class="cufon cufon-canvas" style="width: 36px; height: 12px;"><canvas width="43" height="13" style="top: 0px; left: 0px;"></canvas><span class="cufon-alt">Share </span></span><span class="cufon cufon-canvas" style="width: 30px; height: 12px;"><canvas width="37" height="13" style="top: 0px; left: 0px;"></canvas><span class="cufon-alt">with </span></span><span class="cufon cufon-canvas" style="width: 14px; height: 12px;"><canvas width="20" height="13" style="top: 0px; left: 0px;"></canvas><span class="cufon-alt">Us</span></span></h6>
-                        <ul>
-                            <li class="facebook"><a href="#">Facebook</a></li>
-                            <li class="twitter"><a href="#">Twitter</a></li>
-                            <li class="youtube"><a href="#">Youtube</a></li>
-                            <li class="digg"><a href="#">Digg</a></li>
-                        </ul>
-                    </div>
-                    <div class="connect">
-                        <h6><span class="cufon cufon-canvas" style="width: 48px; height: 12px;"><canvas width="54" height="13" style="top: 0px; left: 0px;"></canvas><span class="cufon-alt">Connect</span></span></h6>
-                        <ul>
-                            <li><a href="#">New to In Convenant?</a></li>
-                            <li><a href="#">Volunteer Today</a></li>
-                            <li><a href="#">Event Calendar</a></li>
-                            <li><a href="#">Directions</a></li>
-                            <li><a href="#">Invite A Friend?</a></li>
-                        </ul>
-                    </div>
-                    <div class="connect">
-                        <h6><span class="cufon cufon-canvas" style="width: 58px; height: 12px;"><canvas width="63" height="13" style="top: 0px; left: 0px;"></canvas><span class="cufon-alt">Resources</span></span></h6>
-                        <ul>
-                            <li><a href="#">Archived Messages</a></li>
-                            <li><a href="#">Photo Galleries</a></li>
-                            <li><a href="#">Downloads</a></li>
-                            <li><a href="#">Online Store</a></li>
-                            <li><a href="#">Member Login</a></li>
-                        </ul>
-                    </div>
-                    <div class="clear"></div>
-                </div>
-            </div>
+            <%@include file="includes/footer.jsp" %>
         </div>
         <div id="fancybox-tmp"></div><div id="fancybox-loading">
             <div></div></div>
