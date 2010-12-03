@@ -65,4 +65,25 @@ public class ProductAction extends DispatchAction {
         }
         return mapping.findForward(FAILURE);
     }
+
+    /**
+     * This is the Struts action method called on
+     * http://.../actionPath?method=myAction2,
+     * where "method" is the value specified in <action> element :
+     * ( <action parameter="method" .../> )
+     */
+    public ActionForward viewCatalog(ActionMapping mapping, ActionForm form,
+            HttpServletRequest request, HttpServletResponse response)
+            throws Exception {
+        Integer categoryId = Integer.valueOf(request.getParameter("cateId"));
+        if (categoryId != null) {
+            List<ProductDTO> productList = productBO.getAllProductByCategoryId(categoryId);
+            if (productList != null) {
+                request.setAttribute("productList", productList);
+                return mapping.findForward(SUCCESS);
+            }
+            return mapping.findForward(FAILURE);
+        }
+        return mapping.findForward(FAILURE);
+    }
 }
