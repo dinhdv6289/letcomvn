@@ -1,11 +1,11 @@
 <%@page contentType="text/html"%>
 <%@page pageEncoding="UTF-8"%>
-<%@taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c" %>
-<%@taglib  uri="/WEB-INF/struts-logic.tld" prefix="logic" %>
+
 <html xmlns="http://www.w3.org/1999/xhtml">
     <head>
         <meta content="text/html; charset=utf-8" http-equiv="Content-Type"></meta>
         <title>Kh&#7855;c Laser, C&#7855;t Laser, H&agrave;n Laser - Laser Marking/Laser Engraving, Laser Cutting, Laser Welding - C&ocirc;ng ty TNHH Thi&#7871;t b&#7883; v&agrave; C&ocirc;ng ngh&#7879; Laser</title>
+
         <!-- Stylesheets -->
         <link type="text/css" rel="stylesheet" href="css/style.css"></link>
         <link href="css/ddsmoothmenu.css" type="text/css" rel="stylesheet"></link>
@@ -52,7 +52,9 @@
             <!-- Header -->
             <div id="masthead">
                 <div class="inner">
-                    <div class="logo"><a href="#"><img alt="" src="images/logolet.png"/><span style="color: #ffffff;font-size: 20px;">lasers for industrial applications</span> </a></div>
+                    <div class="logo">
+                        <a href="#"><img alt="" src="images/logolet.png"/><span style="color: #ffffff;font-size: 20px;">lasers for industrial applications</span></a>
+                    </div>
                     <div class="right_head">
                         <div class="search">
                             <input type="text" onfocus="if(this.value == 'Search your contents here...') { this.value = ''; }" onblur="if(this.value == '') { this.value = 'Search your contents here...'; }" name="s" id="searchBox" value="Search your contents here..."/>
@@ -137,8 +139,9 @@
                     <div class="col1">
                         <!-- Categories 3 Level -->
                         <div class="categoriesani">
-                            <h5 class="head colr">Categories
-                            </h5>
+                            <h6 class="adres colr">Categories
+
+                            </h6>
                             <!--                            menu doc-->
                             <%@include file="includes/menuHorizontal.jsp" %>
                         </div>
@@ -150,17 +153,19 @@
                     </div>
                     <div class="col2">
                         <h3 class="colr heading">Product
-                        </h3>
+                            <span class="cufon cufon-canvas" style="width: 83px; height: 18px;">
+                                <canvas width="94" height="19" style="top: 0px; left: 0px;"></canvas>
+                                <span class="cufon-alt">Welcome </span></span>
+                            <span class="cufon cufon-canvas" style="width: 24px; height: 18px;">
+                                <canvas width="34" height="19" style="top: 0px; left: 0px;"></canvas>
+                                <span class="cufon-alt">to </span></span>
+                            <span class="cufon cufon-canvas" style="width: 89px; height: 18px;">
+                                <canvas width="98" height="19" style="top: 0px; left: 0px;">
+
+                                </canvas><span class="cufon-alt">Convenant</span></span></h3>
                         <p>
-                            <logic:notPresent name="productDetail">
-                                ko ton tai.
-                            </logic:notPresent>
-                            <logic:present name="productDetail">
-                                ${productDetail.productName}
-                                <img src="${productDetail.picture}" alt=""/>
-                                ${productDetail.features}
-                                ${productDetail.description}
-                            </logic:present>
+                	Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Sed elit. Nulla sem risus, vestibulum in, volutpat eget, dapibus ac, lectus. Curabitur dolor sapien, hendrerit non, suscipit bibendum, auctor ac, arcu. Vestibulum dapibus. Sed pede lacus, pretium in, condimentum sit amet, mollis dapibus, magna. Ut bibendum dolor nec augue. Ut tempus luctus metus. Sed a velit. Pellentesque at libero elementum ante condimentum sollicitudin.  Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Sed elit. Nulla sem risus, vestibulum in, volutpat eget, dapibus ac, lectus. Curabitur dolor sapien, hendrerit non, suscipit bibendum, auctor ac, arcu. Vestibulum dapibus. Sed pede lacus, pretium in, condimentum sit amet, mollis dapibus, magna. Ut bibendum dolor nec augue. Ut tempus luctus metus. Sed a velit. Pellentesque at libero elementum ante condimentum sollicitudin.
+
                         </p>
                         <br/>
                         <br/>
