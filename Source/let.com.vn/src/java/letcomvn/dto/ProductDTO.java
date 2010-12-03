@@ -10,7 +10,7 @@ import java.io.Serializable;
  *
  * @author DINH
  */
-public class ProductDTO implements Serializable{
+public class ProductDTO implements Serializable {
 
     private Integer productId;
     private String productName;
@@ -18,26 +18,41 @@ public class ProductDTO implements Serializable{
     private String picture;
     private String features;
     private String description;
+    private Integer priorityDisplay;
 
     public ProductDTO() {
     }
 
-    public ProductDTO(String productName, Float price, String picture, String features, String description) {
+    public ProductDTO(String productName, Float price, String picture, String features, String description, Integer priorityDisplay) {
         this.productName = productName;
         this.price = price;
         this.picture = picture;
         this.features = features;
         this.description = description;
+        this.priorityDisplay = priorityDisplay;
     }
 
-    public ProductDTO(Integer productId, String productName, Float price, String picture, String features, String description) {
+    public ProductDTO(Integer productId, String productName, Float price, String picture, String features, String description, Integer priorityDisplay) {
         this.productId = productId;
         this.productName = productName;
         this.price = price;
         this.picture = picture;
         this.features = features;
         this.description = description;
+        this.priorityDisplay = priorityDisplay;
     }
+
+    
+
+    public Integer getPriorityDisplay() {
+        return priorityDisplay;
+    }
+
+    public void setPriorityDisplay(Integer priorityDisplay) {
+        this.priorityDisplay = priorityDisplay;
+    }
+
+
 
     /**
      * @return the productId
@@ -122,6 +137,4 @@ public class ProductDTO implements Serializable{
     public void setDescription(String description) {
         this.description = description;
     }
-
-    
 }

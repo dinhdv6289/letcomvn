@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN" "http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<hibernate-mapping>
+  <class name="letcomvn.dto.PartnerDTO" table="Partners">
+    <id name="partnerId" type="int">
+      <column name="PartnerId"/>
+      <generator class="identity"/>
+    </id>
+    <property name="partnerName" type="string">
+      <column length="100" name="PartnerName" not-null="true"/>
+    </property>
+    <property name="partnerImage" type="string">
+      <column length="255" name="PartnerImage"/>
+    </property>
+    <property name="partnerDescription" type="string">
+      <column name="PartnerDescription"/>
+    </property>
+    <property name="partnerWebsite" type="string">
+      <column length="100" name="PartnerWebsite"/>
+    </property>
+    <property name="partnerDocument">
+      <column length="100" name="PartnerDocument"/>
+    </property>
+  </class>
+</hibernate-mapping>

@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN" "http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<hibernate-mapping>
+  <class name="letcomvn.dto.ExhibitionDTO" table="Exhibitions">
+    <id name="exhibitionId" type="int">
+      <column name="ExhibitionId"/>
+      <generator class="identity"/>
+    </id>
+    <property name="exhibitionName" type="string">
+      <column length="200" name="ExhibitionName" not-null="true"/>
+    </property>
+    <property name="exhibitionTime" type="timestamp">
+      <column name="ExhibitionTime"/>
+    </property>
+    <property name="exhibitionPlace" type="string">
+      <column length="100" name="ExhibitionPlace"/>
+    </property>
+  </class>
+</hibernate-mapping>
