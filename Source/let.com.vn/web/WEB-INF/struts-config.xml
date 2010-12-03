@@ -7,6 +7,8 @@
 
 <struts-config>
     <form-beans>
+        <form-bean name="ExhibitionForm" type="letcomvn.form.ExhibitionForm"/>
+        <form-bean name="PartnerForm" type="letcomvn.form.PartnerForm"/>
         <form-bean name="CategoryForm" type="letcomvn.form.CategoryForm"/>
         <form-bean name="ProductForm" type="letcomvn.form.ProductForm"/>
     </form-beans>

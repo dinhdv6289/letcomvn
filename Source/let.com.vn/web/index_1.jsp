@@ -179,93 +179,9 @@
                         <!-- Categories 3 Level -->
                         <div class="categoriesani">
                             <h5 class="head colr">Category
-                                </h5>
-                            <div class="arrowlistmenu">
-                                <a class="menuheader expandable openheader" headerindex="0h"><span class="accordprefix"></span>Books<span class="accordsuffix"></span></a>
-                                <ul class="categoryitems" contentindex="0c" style="display: block;">
-                                    <li><a href="#">The Hobbit</a></li>
-                                    <li><a class="subexpandable closedsubheader" href="#" headerindex="0h">Harry Potter Series</a>
-                                        <ul class="subcategoryitems" contentindex="0c" style="display: block;">
-                                            <li><a href="#">The Hobbit</a></li>
-                                            <li><a href="#">Wizard in</a></li>
-                                        </ul>
-                                    </li>
-                                    <li><a href="#">Encyclopedia Galactica</a></li>
-                                    <li><a href="#">Dorothy &amp; the Wizard in Oz</a></li>
-                                </ul>
-                                <a class="menuheader expandable" headerindex="1h"><span class="accordprefix"></span>Religion and Spirituality<span class="accordsuffix"></span></a>
-                                <ul class="categoryitems" contentindex="1c" style="display: none;">
-                                    <li><a href="#">The Hobbit</a></li>
-                                    <li><a class="subexpandable opensubheader" href="#" headerindex="1h">Harry Potter Series</a>
-                                        <ul class="subcategoryitems" contentindex="1c" style="display: none;">
-                                            <li><a href="#">The Hobbit</a></li>
-                                            <li><a href="#">Wizard in</a></li>
-                                        </ul>
-                                    </li>
-                                    <li><a href="#">Encyclopedia Galactica</a></li>
-                                    <li><a href="#">Dorothy &amp; the Wizard in Oz</a></li>
-                                </ul>
-                                <a class="menuheader expandable" headerindex="2h"><span class="accordprefix"></span>Finding Ruth<span class="accordsuffix"></span></a>
-                                <ul class="categoryitems" contentindex="2c" style="display: none;">
-                                    <li><a href="#">The Hobbit</a></li>
-                                    <li><a class="subexpandable opensubheader" href="#" headerindex="2h">Harry Potter Series</a>
-                                        <ul class="subcategoryitems" contentindex="2c" style="display: none;">
-                                            <li><a href="#">The Hobbit</a></li>
-                                            <li><a href="#">Wizard in</a></li>
-                                        </ul>
-                                    </li>
-                                    <li><a href="#">Encyclopedia Galactica</a></li>
-                                    <li><a href="#">Dorothy &amp; the Wizard in Oz</a></li>
-                                </ul>
-                                <a class="menuheader expandable" headerindex="3h"><span class="accordprefix"></span>If Grace Is True<span class="accordsuffix"></span></a>
-                                <ul class="categoryitems" contentindex="3c" style="display: none;">
-                                    <li><a href="#">The Hobbit</a></li>
-                                    <li><a class="subexpandable opensubheader" href="#" headerindex="3h">Harry Potter Series</a>
-                                        <ul class="subcategoryitems" contentindex="3c" style="display: none;">
-                                            <li><a href="#">The Hobbit</a></li>
-                                            <li><a href="#">Wizard in</a></li>
-                                        </ul>
-                                    </li>
-                                    <li><a href="#">Encyclopedia Galactica</a></li>
-                                    <li><a href="#">Dorothy &amp; the Wizard in Oz</a></li>
-                                </ul>
-                                <a class="menuheader expandable" headerindex="4h"><span class="accordprefix"></span>Standing For Something<span class="accordsuffix"></span></a>
-                                <ul class="categoryitems" contentindex="4c" style="display: none;">
-                                    <li><a href="#">The Hobbit</a></li>
-                                    <li><a class="subexpandable opensubheader" href="#" headerindex="4h">Harry Potter Series</a>
-                                        <ul class="subcategoryitems" contentindex="4c" style="display: none;">
-                                            <li><a href="#">The Hobbit</a></li>
-                                            <li><a href="#">Wizard in</a></li>
-                                        </ul>
-                                    </li>
-                                    <li><a href="#">Encyclopedia Galactica</a></li>
-                                    <li><a href="#">Dorothy &amp; the Wizard in Oz</a></li>
-                                </ul>
-                                <a class="menuheader expandable" headerindex="5h"><span class="accordprefix"></span>Spellbound<span class="accordsuffix"></span></a>
-                                <ul class="categoryitems" contentindex="5c" style="display: none;">
-                                    <li><a href="#">The Hobbit</a></li>
-                                    <li><a class="subexpandable opensubheader" href="#" headerindex="5h">Harry Potter Series</a>
-                                        <ul class="subcategoryitems" contentindex="5c" style="display: none;">
-                                            <li><a href="#">The Hobbit</a></li>
-                                            <li><a href="#">Wizard in</a></li>
-                                        </ul>
-                                    </li>
-                                    <li><a href="#">Encyclopedia Galactica</a></li>
-                                    <li><a href="#">Dorothy &amp; the Wizard in Oz</a></li>
-                                </ul>
-                                <a class="menuheader expandable" headerindex="6h"><span class="accordprefix"></span>The Longest Trip Home<span class="accordsuffix"></span></a>
-                                <ul class="categoryitems" contentindex="6c" style="display: none;">
-                                    <li><a href="#">The Hobbit</a></li>
-                                    <li><a class="subexpandable opensubheader" href="#" headerindex="6h">Harry Potter Series</a>
-                                        <ul class="subcategoryitems" contentindex="6c" style="display: none;">
-                                            <li><a href="#">The Hobbit</a></li>
-                                            <li><a href="#">Wizard in</a></li>
-                                        </ul>
-                                    </li>
-                                    <li><a href="#">Encyclopedia Galactica</a></li>
-                                    <li><a href="#">Dorothy &amp; the Wizard in Oz</a></li>
-                                </ul>
-                            </div>
+                            </h5>
+                            <!--                            menu doc-->
+                            <%@include file="includes/menuHorizontal.jsp" %>
                         </div>
                         <div class="clear"></div>
                         <!-- Advertisment -->
@@ -290,109 +206,109 @@
 
                         </p>
                         <div class="sections">
-                        <div class="sec sec1">
-                            <h5 class="colr"><span class="cufon cufon-canvas" style="width: 56px; height: 14px;"><canvas width="65" height="15" style="top: 0px; left: 0px;"></canvas><span class="cufon-alt">RECENT </span></span><span class="cufon cufon-canvas" style="width: 38px; height: 14px;"><canvas width="43" height="15" style="top: 0px; left: 0px;"></canvas><span class="cufon-alt">NEWS</span></span></h5>
-                            <div class="center_sec">
-                                <ul>
-                                    <li>
-                                        <div class="date">
-                                            <p class="month">April</p>
-                                            <p class="day_date">21</p>
-                                        </div>
-                                        <div class="desc">
-                                            <h6 class="colr"><a class="colr" href="#"><span class="cufon cufon-canvas" style="width: 40px; height: 12px;"><canvas width="48" height="13" style="top: 0px; left: 0px;"></canvas><span class="cufon-alt">Lorem </span></span><span class="cufon cufon-canvas" style="width: 38px; height: 12px;"><canvas width="45" height="13" style="top: 0px; left: 0px;"></canvas><span class="cufon-alt">ipsum </span></span><span class="cufon cufon-canvas" style="width: 34px; height: 12px;"><canvas width="41" height="13" style="top: 0px; left: 0px;"></canvas><span class="cufon-alt">dolor </span></span><span class="cufon cufon-canvas" style="width: 18px; height: 12px;"><canvas width="25" height="13" style="top: 0px; left: 0px;"></canvas><span class="cufon-alt">sit </span></span><span class="cufon cufon-canvas" style="width: 34px; height: 12px;"><canvas width="41" height="13" style="top: 0px; left: 0px;"></canvas><span class="cufon-alt">amet </span></span><span class="cufon cufon-canvas" style="width: 39px; height: 12px;"><canvas width="44" height="13" style="top: 0px; left: 0px;"></canvas><span class="cufon-alt">consec</span></span></a></h6>
-                                            <p>
-                                                tetuer adipiscing elit. Sed elit. Nulla sem risus, vestibulum. <a class="readmore colr" href="#">Read More</a>
-                                            </p>
-                                        </div>
-                                    </li>
-                                    <li>
-                                        <div class="date">
-                                            <p class="month">April</p>
-                                            <p class="day_date">21</p>
-                                        </div>
-                                        <div class="desc">
-                                            <h6 class="colr"><a class="colr" href="#">
-                                                    <span class="cufon cufon-canvas" style="width: 40px; height: 12px;">
-                                                        <canvas width="48" height="13" style="top: 0px; left: 0px;"></canvas>
-                                                        <span class="cufon-alt">Lorem </span></span>
-                                                    <span class="cufon cufon-canvas" style="width: 38px; height: 12px;">
-                                                        <canvas width="45" height="13" style="top: 0px; left: 0px;"></canvas>
-                                                        <span class="cufon-alt">ipsum </span></span>
-                                                    <span class="cufon cufon-canvas" style="width: 34px; height: 12px;">
-                                                        <canvas width="41" height="13" style="top: 0px; left: 0px;"></canvas>
-                                                        <span class="cufon-alt">dolor </span></span>
-                                                    <span class="cufon cufon-canvas" style="width: 18px; height: 12px;"><canvas width="25" height="13" style="top: 0px; left: 0px;"></canvas><span class="cufon-alt">sit </span></span><span class="cufon cufon-canvas" style="width: 34px; height: 12px;"><canvas width="41" height="13" style="top: 0px; left: 0px;"></canvas><span class="cufon-alt">amet </span></span><span class="cufon cufon-canvas" style="width: 39px; height: 12px;"><canvas width="44" height="13" style="top: 0px; left: 0px;"></canvas><span class="cufon-alt">consec</span></span></a></h6>
-                                            <p>
-                                                tetuer adipiscing elit. Sed elit. Nulla sem risus, vestibulum. <a class="readmore colr" href="#">Read More</a>
-                                            </p>
-                                        </div>
-                                    </li>
-                                    <li>
-                                        <div class="date">
-                                            <p class="month">April</p>
-                                            <p class="day_date">21</p>
-                                        </div>
-                                        <div class="desc">
-                                            <h6 class="colr">
-                                                <a class="colr" href="#">
-                                                    <span class="cufon cufon-canvas" style="width: 40px; height: 12px;">
-                                                        <canvas width="48" height="13" style="top: 0px; left: 0px;"></canvas>
-                                                        <span class="cufon-alt">Lorem </span></span>
-                                                    <span class="cufon cufon-canvas" style="width: 38px; height: 12px;">
-                                                        <canvas width="45" height="13" style="top: 0px; left: 0px;"></canvas>
-                                                        <span class="cufon-alt">ipsum </span></span>
-                                                    <span class="cufon cufon-canvas" style="width: 34px; height: 12px;">
-                                                        <canvas width="41" height="13" style="top: 0px; left: 0px;"></canvas>
-                                                        <span class="cufon-alt">dolor </span></span>
-                                                    <span class="cufon cufon-canvas" style="width: 18px; height: 12px;">
-                                                        <canvas width="25" height="13" style="top: 0px; left: 0px;"></canvas>
-                                                        <span class="cufon-alt">sit </span></span>
-                                                    <span class="cufon cufon-canvas" style="width: 34px; height: 12px;">
-                                                        <canvas width="41" height="13" style="top: 0px; left: 0px;"></canvas>
-                                                        <span class="cufon-alt">amet </span></span>
-                                                    <span class="cufon cufon-canvas" style="width: 39px; height: 12px;">
-                                                        <canvas width="44" height="13" style="top: 0px; left: 0px;"></canvas>
-                                                        <span class="cufon-alt">consec</span></span></a>
-                                            </h6>
-                                            <p>
-                                                tetuer adipiscing elit. Sed elit. Nulla sem risus, vestibulum. <a class="readmore colr" href="#">Read More</a>
-                                            </p>
-                                        </div>
-                                    </li>
-                                </ul>
+                            <div class="sec sec1">
+                                <h5 class="colr"><span class="cufon cufon-canvas" style="width: 56px; height: 14px;"><canvas width="65" height="15" style="top: 0px; left: 0px;"></canvas><span class="cufon-alt">RECENT </span></span><span class="cufon cufon-canvas" style="width: 38px; height: 14px;"><canvas width="43" height="15" style="top: 0px; left: 0px;"></canvas><span class="cufon-alt">NEWS</span></span></h5>
+                                <div class="center_sec">
+                                    <ul>
+                                        <li>
+                                            <div class="date">
+                                                <p class="month">April</p>
+                                                <p class="day_date">21</p>
+                                            </div>
+                                            <div class="desc">
+                                                <h6 class="colr"><a class="colr" href="#"><span class="cufon cufon-canvas" style="width: 40px; height: 12px;"><canvas width="48" height="13" style="top: 0px; left: 0px;"></canvas><span class="cufon-alt">Lorem </span></span><span class="cufon cufon-canvas" style="width: 38px; height: 12px;"><canvas width="45" height="13" style="top: 0px; left: 0px;"></canvas><span class="cufon-alt">ipsum </span></span><span class="cufon cufon-canvas" style="width: 34px; height: 12px;"><canvas width="41" height="13" style="top: 0px; left: 0px;"></canvas><span class="cufon-alt">dolor </span></span><span class="cufon cufon-canvas" style="width: 18px; height: 12px;"><canvas width="25" height="13" style="top: 0px; left: 0px;"></canvas><span class="cufon-alt">sit </span></span><span class="cufon cufon-canvas" style="width: 34px; height: 12px;"><canvas width="41" height="13" style="top: 0px; left: 0px;"></canvas><span class="cufon-alt">amet </span></span><span class="cufon cufon-canvas" style="width: 39px; height: 12px;"><canvas width="44" height="13" style="top: 0px; left: 0px;"></canvas><span class="cufon-alt">consec</span></span></a></h6>
+                                                <p>
+                                                    tetuer adipiscing elit. Sed elit. Nulla sem risus, vestibulum. <a class="readmore colr" href="#">Read More</a>
+                                                </p>
+                                            </div>
+                                        </li>
+                                        <li>
+                                            <div class="date">
+                                                <p class="month">April</p>
+                                                <p class="day_date">21</p>
+                                            </div>
+                                            <div class="desc">
+                                                <h6 class="colr"><a class="colr" href="#">
+                                                        <span class="cufon cufon-canvas" style="width: 40px; height: 12px;">
+                                                            <canvas width="48" height="13" style="top: 0px; left: 0px;"></canvas>
+                                                            <span class="cufon-alt">Lorem </span></span>
+                                                        <span class="cufon cufon-canvas" style="width: 38px; height: 12px;">
+                                                            <canvas width="45" height="13" style="top: 0px; left: 0px;"></canvas>
+                                                            <span class="cufon-alt">ipsum </span></span>
+                                                        <span class="cufon cufon-canvas" style="width: 34px; height: 12px;">
+                                                            <canvas width="41" height="13" style="top: 0px; left: 0px;"></canvas>
+                                                            <span class="cufon-alt">dolor </span></span>
+                                                        <span class="cufon cufon-canvas" style="width: 18px; height: 12px;"><canvas width="25" height="13" style="top: 0px; left: 0px;"></canvas><span class="cufon-alt">sit </span></span><span class="cufon cufon-canvas" style="width: 34px; height: 12px;"><canvas width="41" height="13" style="top: 0px; left: 0px;"></canvas><span class="cufon-alt">amet </span></span><span class="cufon cufon-canvas" style="width: 39px; height: 12px;"><canvas width="44" height="13" style="top: 0px; left: 0px;"></canvas><span class="cufon-alt">consec</span></span></a></h6>
+                                                <p>
+                                                    tetuer adipiscing elit. Sed elit. Nulla sem risus, vestibulum. <a class="readmore colr" href="#">Read More</a>
+                                                </p>
+                                            </div>
+                                        </li>
+                                        <li>
+                                            <div class="date">
+                                                <p class="month">April</p>
+                                                <p class="day_date">21</p>
+                                            </div>
+                                            <div class="desc">
+                                                <h6 class="colr">
+                                                    <a class="colr" href="#">
+                                                        <span class="cufon cufon-canvas" style="width: 40px; height: 12px;">
+                                                            <canvas width="48" height="13" style="top: 0px; left: 0px;"></canvas>
+                                                            <span class="cufon-alt">Lorem </span></span>
+                                                        <span class="cufon cufon-canvas" style="width: 38px; height: 12px;">
+                                                            <canvas width="45" height="13" style="top: 0px; left: 0px;"></canvas>
+                                                            <span class="cufon-alt">ipsum </span></span>
+                                                        <span class="cufon cufon-canvas" style="width: 34px; height: 12px;">
+                                                            <canvas width="41" height="13" style="top: 0px; left: 0px;"></canvas>
+                                                            <span class="cufon-alt">dolor </span></span>
+                                                        <span class="cufon cufon-canvas" style="width: 18px; height: 12px;">
+                                                            <canvas width="25" height="13" style="top: 0px; left: 0px;"></canvas>
+                                                            <span class="cufon-alt">sit </span></span>
+                                                        <span class="cufon cufon-canvas" style="width: 34px; height: 12px;">
+                                                            <canvas width="41" height="13" style="top: 0px; left: 0px;"></canvas>
+                                                            <span class="cufon-alt">amet </span></span>
+                                                        <span class="cufon cufon-canvas" style="width: 39px; height: 12px;">
+                                                            <canvas width="44" height="13" style="top: 0px; left: 0px;"></canvas>
+                                                            <span class="cufon-alt">consec</span></span></a>
+                                                </h6>
+                                                <p>
+                                                    tetuer adipiscing elit. Sed elit. Nulla sem risus, vestibulum. <a class="readmore colr" href="#">Read More</a>
+                                                </p>
+                                            </div>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <div class="sec_bottm">&nbsp;</div>
                             </div>
-                            <div class="sec_bottm">&nbsp;</div>
-                        </div>
-                        <div class="sec sec3">
-                            <h5 class="colr"><span class="cufon cufon-canvas" style="width: 83px; height: 14px;">
-                                    <canvas width="86" height="15" style="top: 0px; left: 0px;"></canvas>
-                                    <span class="cufon-alt">INSPIRATION</span></span>
-                            </h5>
-                            <div class="center_sec">
-                                <ul>
-                                    <li><a href="#"><img alt="" src="images/inspiration1.gif"/></a></li>
-                                    <li><a href="#"><img alt="" src="images/inspiration2.gif"/></a></li>
-                                    <li><a href="#"><img alt="" src="images/inspiration3.gif"/></a></li>
-                                    <li class="last"><a href="#"><img alt="" src="images/inspiration4.gif"/></a></li>
-                                    <li><a href="#"><img alt="" src="images/inspiration5.gif"/></a></li>
-                                    <li><a href="#"><img alt="" src="images/inspiration6.gif"/></a></li>
-                                    <li><a href="#"><img alt="" src="images/inspiration7.gif"/></a></li>
-                                    <li class="last"><a href="#"><img alt="" src="images/inspiration8.gif"/></a></li>
-                                    <li><a href="#"><img alt="" src="images/inspiration9.gif"/></a></li>
-                                    <li><a href="#"><img alt="" src="images/inspiration10.gif"/></a></li>
-                                    <li><a href="#"><img alt="" src="images/inspiration11.gif"/></a></li>
-                                    <li class="last"><a href="#"><img alt="" src="images/inspiration12.gif"/></a></li>
-                                </ul>
-                                <a class="colr readmore" href="#">Read More</a>
+                            <div class="sec sec3">
+                                <h5 class="colr"><span class="cufon cufon-canvas" style="width: 83px; height: 14px;">
+                                        <canvas width="86" height="15" style="top: 0px; left: 0px;"></canvas>
+                                        <span class="cufon-alt">INSPIRATION</span></span>
+                                </h5>
+                                <div class="center_sec">
+                                    <ul>
+                                        <li><a href="#"><img alt="" src="images/inspiration1.gif"/></a></li>
+                                        <li><a href="#"><img alt="" src="images/inspiration2.gif"/></a></li>
+                                        <li><a href="#"><img alt="" src="images/inspiration3.gif"/></a></li>
+                                        <li class="last"><a href="#"><img alt="" src="images/inspiration4.gif"/></a></li>
+                                        <li><a href="#"><img alt="" src="images/inspiration5.gif"/></a></li>
+                                        <li><a href="#"><img alt="" src="images/inspiration6.gif"/></a></li>
+                                        <li><a href="#"><img alt="" src="images/inspiration7.gif"/></a></li>
+                                        <li class="last"><a href="#"><img alt="" src="images/inspiration8.gif"/></a></li>
+                                        <li><a href="#"><img alt="" src="images/inspiration9.gif"/></a></li>
+                                        <li><a href="#"><img alt="" src="images/inspiration10.gif"/></a></li>
+                                        <li><a href="#"><img alt="" src="images/inspiration11.gif"/></a></li>
+                                        <li class="last"><a href="#"><img alt="" src="images/inspiration12.gif"/></a></li>
+                                    </ul>
+                                    <a class="colr readmore" href="#">Read More</a>
+                                </div>
+                                <div class="sec_bottm">&nbsp;</div>
                             </div>
-                            <div class="sec_bottm">&nbsp;</div>
-                        </div>
 
-                    </div>
+                        </div>
                     </div>
                     <div class="clear"></div>
-                    
+
                     <div class="clear"></div>
                 </div>
                 <div class="clear"></div>
