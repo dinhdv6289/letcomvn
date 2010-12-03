@@ -16,22 +16,35 @@ public class CategoryDTO implements Serializable {
     private Integer categoryId;
     private String categoryName;
     private String description;
+    private Integer priorityDisplay;
+
     private Set products = new HashSet(0);
 
     public CategoryDTO() {
     }
 
-    
-    public CategoryDTO(String categoryName, String description) {
+    public CategoryDTO(String categoryName, String description, Integer priorityDisplay) {
         this.categoryName = categoryName;
         this.description = description;
+        this.priorityDisplay = priorityDisplay;
     }
 
-    public CategoryDTO(Integer categoryId, String categoryName, String description) {
+    public CategoryDTO(Integer categoryId, String categoryName, String description, Integer priorityDisplay) {
         this.categoryId = categoryId;
         this.categoryName = categoryName;
         this.description = description;
+        this.priorityDisplay = priorityDisplay;
     }
+
+    public Integer getPriorityDisplay() {
+        return priorityDisplay;
+    }
+
+    public void setPriorityDisplay(Integer priorityDisplay) {
+        this.priorityDisplay = priorityDisplay;
+    }
+
+    
 
     /**
      * @return the categoryId

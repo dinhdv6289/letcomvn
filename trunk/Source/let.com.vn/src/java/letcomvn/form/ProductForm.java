@@ -20,6 +20,17 @@ public class ProductForm extends org.apache.struts.action.ActionForm {
     private String features;
     private String description;
     private List<ProductDTO> productList;
+    private Integer priorityDisplay;
+
+    public Integer getPriorityDisplay() {
+        return priorityDisplay;
+    }
+
+    public void setPriorityDisplay(Integer priorityDisplay) {
+        this.priorityDisplay = priorityDisplay;
+    }
+
+    
     /**
      * @return the productId
      */

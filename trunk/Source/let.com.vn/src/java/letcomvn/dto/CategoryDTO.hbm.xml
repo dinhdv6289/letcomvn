@@ -10,7 +10,10 @@
       <column length="50" name="categoryName" not-null="true"/>
     </property>
     <property name="description" type="string">
-      <column  name="description"/>
+      <column name="description"/>
+    </property>
+    <property name="priorityDisplay" type="int">
+        <column name="priorityDisplay"/>
     </property>
     <set inverse="true" name="products">
       <key>

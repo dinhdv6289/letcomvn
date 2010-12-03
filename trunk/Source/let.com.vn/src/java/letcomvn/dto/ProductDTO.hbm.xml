@@ -10,7 +10,7 @@
       <column length="50" name="productName" not-null="true"/>
     </property>
     <property name="price" type="float">
-      <column  name="price" not-null="true"/>
+      <column name="price" not-null="true"/>
     </property>
     <property name="picture" type="string">
       <column length="255" name="picture"/>
@@ -20,6 +20,9 @@
     </property>
     <property name="description" type="string">
       <column name="description"/>
+    </property>
+    <property name="priorityDisplay" type="int">
+        <column name="priorityDisplay"/>
     </property>
   </class>
 </hibernate-mapping>

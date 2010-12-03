@@ -15,5 +15,7 @@
     <property name="hibernate.current_session_context_class">thread</property>
     <mapping resource="letcomvn/dto/ProductDTO.hbm.xml"/>
     <mapping resource="letcomvn/dto/CategoryDTO.hbm.xml"/>
+    <mapping resource="letcomvn/dto/ExhibitionDTO.hbm.xml"/>
+    <mapping resource="letcomvn/dto/PartnerDTO.hbm.xml"/>
   </session-factory>
 </hibernate-configuration>

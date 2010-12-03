@@ -2,7 +2,6 @@
  * To change this template, choose Tools | Templates
  * and open the template in the editor.
  */
-
 package letcomvn.form;
 
 /**
@@ -10,12 +9,21 @@ package letcomvn.form;
  * @author DINHDV
  */
 public class CategoryForm extends org.apache.struts.action.ActionForm {
-    
+
     private Integer categoryId;
     private String categoryName;
     private String description;
+    private Integer priorityDisplay;
 
-  
+    public Integer getPriorityDisplay() {
+        return priorityDisplay;
+    }
+
+    public void setPriorityDisplay(Integer priorityDisplay) {
+        this.priorityDisplay = priorityDisplay;
+    }
+
+    
 
     /**
      *
@@ -48,12 +56,10 @@ public class CategoryForm extends org.apache.struts.action.ActionForm {
     public void setDescription(String description) {
         this.description = description;
     }
-
     /**
      * This is the action called from the Struts framework.
      * @param mapping The ActionMapping used to select this instance.
      * @param request The HTTP Request we are processing.
      * @return
      */
-  
 }
