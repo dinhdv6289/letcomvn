@@ -18,9 +18,45 @@
     </global-exceptions>
 
     <global-forwards>
+        <forward name="home"  path="/home.do"/>
+        <forward name="product"  path="/product.do"/>
+        <forward name="application"  path="/application.do"/>
+        <forward name="services"  path="/services.do"/>
+        <forward name="application"  path="/support.do"/>
+        <forward name="contact"  path="/contact.do"/>
+        <forward name="partner"  path="/contact.do"/>
+        <forward name="references"  path="/contact.do"/>
+        <forward name="laserJobShop"  path="/laserJobShop.do"/>
+        <forward name="exhibitions"  path="/exhibitions.do"/>
+        <forward name="industry"  path="/industry.do"/>
+        <forward name="jewelry"  path="/jewelry.do"/>
+        <forward name="laserTechnicalServices"  path="/laserTechnicalServices.do"/>
+        <forward name="laserMarkingServices"  path="/laserMarkingServices.do"/>
+        <forward name="laserWeldingServices"  path="/laserWeldingServices.do"/>
     </global-forwards>
 
     <action-mappings>
+
+<!--        Begin menu-->
+        <action path="/home" forward="/index.jsp"/>
+        <action path="/product" forward="/product.jsp"/>
+        <action path="/application" forward="/application.jsp"/>
+        <action path="/services" forward="/services.jsp"/>
+        <action path="/support" forward="/support.jsp"/>
+        <action path="/contact" forward="/contact.jsp"/>
+        <action path="/partner" forward="/partner.jsp"/>
+        <action path="/references" forward="/references.jsp"/>
+        <action path="/laserJobShop" forward="/laserJobShop.jsp"/>
+        <action path="/exhibitions" forward="/exhibition.jsp"/>
+        <action path="/industry" forward="/industry.jsp"/>
+        <action path="/jewelry" forward="/jewelry.jsp"/>
+        <action path="/laserTechnicalServices"  forward="/Lasertechnicalservices.jsp"/>
+        <action path="/laserMarkingServices"  forward="/Lasermarkingservices.jsp"/>
+        <action path="/laserWeldingServices"  forward="/Laserweldingservices.jsp"/>
+
+        
+<!--End menu-->
+
         <!--    Begin action of Product-->
         <action parameter="method" name="ProductForm" path="/productList" scope="request" type="letcomvn.action.ProductAction" validate="false">
             <forward name="success" path="/index.jsp"/>
@@ -29,6 +65,10 @@
             <forward name="success" path="/productDetails.jsp"/>
             <forward name="failure" path="/product.jsp"/>
         </action>
+        <action parameter="method" name="ProductForm" path="/viewProducts" scope="request" type="letcomvn.action.ProductAction" validate="false">
+            <forward name="success" path="/catalog.jsp"/>
+        </action>
+
         <!--    End action of Product-->
 
         <action parameter="method"  path="/changeLocale" scope="session" type="letcomvn.action.LocaleAction" validate="false">
@@ -40,6 +80,7 @@
         <action parameter="method" name="CategoryForm" path="/listCategory" scope="request" type="letcomvn.action.CategoryAction" validate="false">
             <forward name="success" path="/product.jsp"/>
         </action>
+        
     </action-mappings>
     
     <controller processorClass="org.apache.struts.tiles.TilesRequestProcessor"/>
