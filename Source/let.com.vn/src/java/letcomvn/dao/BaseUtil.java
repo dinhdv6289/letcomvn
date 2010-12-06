@@ -1,16 +1,27 @@
 package letcomvn.dao;
+
 import java.lang.reflect.ParameterizedType;
 import java.util.ArrayList;
 import java.util.List;
+import java.util.logging.Level;
+import java.util.logging.Logger;
+import org.apache.lucene.analysis.standard.StandardAnalyzer;
+import org.apache.lucene.queryParser.MultiFieldQueryParser;
+import org.apache.lucene.queryParser.ParseException;
+import org.hibernate.Hibernate;
 import org.hibernate.Query;
+import org.hibernate.criterion.DetachedCriteria;
+import org.hibernate.search.*;
+
 /**
  *
  * @author DINH
  */
 public abstract class BaseUtil<T> extends HibernateUtil {
+
     private Class<T> persistentClass;
 
-    public BaseUtil(){
+    public BaseUtil() {
         super();
         this.persistentClass = (Class<T>) ((ParameterizedType) getClass().getGenericSuperclass()).getActualTypeArguments()[0];
     }
@@ -86,7 +97,7 @@ public abstract class BaseUtil<T> extends HibernateUtil {
         return list;
     }
 
-   /**
+    /**
      * Get a entity by Id
      * @param id of entity
      * @param locked lock entity
@@ -281,5 +292,45 @@ public abstract class BaseUtil<T> extends HibernateUtil {
             listTemp.add(list.get(i));
         }
         return listTemp;
+    }
+
+//    public List<T> search(String keySearch){
+//        try {
+//            beginTransaction();
+//           FullTextSession fSession =  Search.getFullTextSession(getCurrentSession());
+//            //  getCurrentSession().
+//            return null;
+//        } catch (Exception ex) {
+//            Logger.getLogger(BaseUtil.class.getName()).log(Level.SEVERE, null, ex);
+//            return null;
+//        }
+//    }
+    public List<T> getAllBySearch(Class<T> tClass, String[] fields, String searchTerms, DetachedCriteria criteria) {
+        try {
+            // the regular hibernate session is wrapped in a FullTextSession
+            FullTextSession fullTextSession = Search.getFullTextSession(getCurrentSession());
+            // we have to begin the transaction again.  Closing it is handled by our AOP layer.
+            beginTransaction();
+            // used to process the query
+            MultiFieldQueryParser parser = new MultiFieldQueryParser(fields, new StandardAnalyzer());
+            try {
+                // generates a lucene search based on our search terms
+                org.apache.lucene.search.Query query = parser.parse(searchTerms);
+                // we build a hibernate query
+                FullTextQuery hibQuery = fullTextSession.createFullTextQuery(query, tClass);
+                if (criteria != null) {
+                    // if there are any hibernate criteria, we drop those in..
+                    // This is only needed really if you want to reference some
+                    //  hibernate field in the query
+                    hibQuery.setCriteriaQuery(criteria.getExecutableCriteria(fullTextSession));
+                }
+                return hibQuery.list();
+            } catch (ParseException e) {
+                throw new RuntimeException(e);
+            }
+        } catch (Exception ex) {
+            Logger.getLogger(BaseUtil.class.getName()).log(Level.SEVERE, null, ex);
+            return null;
+        }
     }
 }
