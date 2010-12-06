@@ -54,6 +54,8 @@ public class ProductAction extends DispatchAction {
     public ActionForward viewDetail(ActionMapping mapping, ActionForm form,
             HttpServletRequest request, HttpServletResponse response)
             throws Exception {
+        //ProductForm productForm = (ProductForm) form;
+       // productForm.getProductId();
         Integer productId = Integer.valueOf(request.getParameter("proId"));
         if (productId != null) {
             ProductDTO product = productBO.getProductById(productId);

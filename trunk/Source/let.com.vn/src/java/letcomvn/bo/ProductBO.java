@@ -82,4 +82,9 @@ public class ProductBO extends BaseUtil<ProductDTO> {
             return null;
         }
     }
+
+    public List<ProductDTO> searchProductsByProductName(String productName){
+
+        return null;
+    }
 }

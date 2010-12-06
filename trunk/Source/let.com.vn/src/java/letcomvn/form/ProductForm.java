@@ -13,7 +13,7 @@ import letcomvn.dto.ProductDTO;
  */
 public class ProductForm extends org.apache.struts.action.ActionForm {
 
-    private Integer productId;
+    private String productId;
     private String productName;
     private Float price;
     private String picture;
@@ -34,14 +34,14 @@ public class ProductForm extends org.apache.struts.action.ActionForm {
     /**
      * @return the productId
      */
-    public Integer getProductId() {
+    public String getProductId() {
         return productId;
     }
 
     /**
      * @param productId the productId to set
      */
-    public void setProductId(Integer productId) {
+    public void setProductId(String productId) {
         this.productId = productId;
     }
 
