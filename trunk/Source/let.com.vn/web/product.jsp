@@ -7,6 +7,8 @@
 <%@page contentType="text/html" pageEncoding="UTF-8"%>
 <%@taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c" %>
 <%@taglib  uri="/WEB-INF/struts-logic.tld" prefix="logic" %>
+<%@taglib  uri="/WEB-INF/struts-html.tld" prefix="html" %>
+<%@taglib  uri="/WEB-INF/struts-bean.tld" prefix="bean" %>
 <jsp:useBean id="categoryBean" class="letcomvn.bo.CategoryBO"/>
 <jsp:useBean id="productBean" class="letcomvn.bo.ProductBO" />
 <html xmlns="http://www.w3.org/1999/xhtml">
@@ -56,10 +58,8 @@
                 <div class="inner">
                     <div class="logo"><a href="#"><img alt="" src="images/logolet.png"/><span style="color: #ffffff;font-size: 20px;">lasers for industrial applications</span></a></div>
                     <div class="right_head">
-                        <div class="search">
-                            <input type="text" onfocus="if(this.value == 'Search your contents here...') { this.value = ''; }" onblur="if(this.value == '') { this.value = 'Search your contents here...'; }" name="s" id="searchBox" value="Search your contents here..."/>
-                            <a class="searchbtn" href="#">Search</a>
-                        </div>
+                        <!--                        search-->
+                        <%@include  file="includes/search.jsp" %>
                         <div class="clear"></div>
                         <!-- Navigation -->
                         <%@include  file="includes/menuTop.jsp" %>

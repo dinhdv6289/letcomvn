@@ -56,10 +56,8 @@
                         <a href="#"><img alt="" src="images/logolet.png"/><span style="color: #ffffff;font-size: 20px;">lasers for industrial applications</span></a>
                     </div>
                     <div class="right_head">
-                        <div class="search">
-                            <input type="text" onfocus="if(this.value == 'Search your contents here...') { this.value = ''; }" onblur="if(this.value == '') { this.value = 'Search your contents here...'; }" name="s" id="searchBox" value="Search your contents here..."/>
-                            <a class="searchbtn" href="#">Search</a>
-                        </div>
+                        <!--                        search-->
+                        <%@include  file="includes/search.jsp" %>
                         <div class="clear"></div>
                         <!-- Navigation -->
                         <%@include  file="includes/menuTop.jsp" %>
