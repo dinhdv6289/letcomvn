@@ -99,7 +99,7 @@ Alpha laser welding system are being using all over the world in many industrial
 electronics, medical equipment, jewelry, dental.
 ','http://alphalaser.de/','documents/ALPHABroschüre2010 engl.pdf')
 insert into Partners(PartnerName,PartnerImage,PartnerDescription,PartnerWebsite,PartnerDocument)
-values('LASAG','partnerImages/lasag logo.jpg',
+values('LASAG','partnerImages/lasag1.JPG',
 N'
 is a leading manufacturer of pulsed YAG industrial lasers for materials processing. 
 These lasers are primarily used for cutting, welding, drilling and ablating of metals and other materials. 
