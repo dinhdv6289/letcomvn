@@ -22,7 +22,7 @@
       <column name="description"/>
     </property>
     <property name="priorityDisplay" type="int">
-        <column name="priorityDisplay"/>
+      <column name="priorityDisplay"/>
     </property>
   </class>
 </hibernate-mapping>
