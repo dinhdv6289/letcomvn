@@ -150,7 +150,7 @@
                         </div>
                     </div>
                     <div class="col2">
-                        <h3 class="colr heading">Product
+                        <h3 class="colr heading">About Us
                             <span class="cufon cufon-canvas" style="width: 83px; height: 18px;">
                                 <canvas width="94" height="19" style="top: 0px; left: 0px;"></canvas>
                                 <span class="cufon-alt">Welcome </span></span>
@@ -161,114 +161,14 @@
                                 <canvas width="98" height="19" style="top: 0px; left: 0px;">
 
                                 </canvas><span class="cufon-alt">Convenant</span></span></h3>
+                        <center><img src="images/LET logo1.jpg" style="margin:10px auto;"/></center>
                         <p>
-                	Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Sed elit. Nulla sem risus, vestibulum in, volutpat eget, dapibus ac, lectus. Curabitur dolor sapien, hendrerit non, suscipit bibendum, auctor ac, arcu. Vestibulum dapibus. Sed pede lacus, pretium in, condimentum sit amet, mollis dapibus, magna. Ut bibendum dolor nec augue. Ut tempus luctus metus. Sed a velit. Pellentesque at libero elementum ante condimentum sollicitudin.  Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Sed elit. Nulla sem risus, vestibulum in, volutpat eget, dapibus ac, lectus. Curabitur dolor sapien, hendrerit non, suscipit bibendum, auctor ac, arcu. Vestibulum dapibus. Sed pede lacus, pretium in, condimentum sit amet, mollis dapibus, magna. Ut bibendum dolor nec augue. Ut tempus luctus metus. Sed a velit. Pellentesque at libero elementum ante condimentum sollicitudin.
+                            
+                            Laser Equipment & Technology company - LET is the pioneer supplier in the field of industrial laser solutions, laser systems and laser services in Vietnam. LET always intend to satisfy customer's requirement with the most reasonable cost for highest quality laser systems from Germany, Switzerland. Purpose of our activities is become the most reliable industrial laser equipment supplier in Vietnam. Please come to LET because our laser solutions always ensure your production. That is our philosophy and is the difference between LET and other suppliers.
 
                         </p>
-                        <br/>
-                        <br/>
-                        <br/>
-                        <div class="sections">
-                            <div class="sec sec1">
-                                <h5 class="colr">
-                                    Products
-                                </h5>
-                                <div class="center_sec">
-                                    <ul>
-                                        <li>
-                                            <div class="date">
-                                                <p class="month">April</p>
-                                                <p class="day_date">21</p>
-                                            </div>
-                                            <div class="desc">
-                                                <h6 class="colr"><a class="colr" href="#"><span class="cufon cufon-canvas" style="width: 40px; height: 12px;"><canvas width="48" height="13" style="top: 0px; left: 0px;"></canvas><span class="cufon-alt">Lorem </span></span><span class="cufon cufon-canvas" style="width: 38px; height: 12px;"><canvas width="45" height="13" style="top: 0px; left: 0px;"></canvas><span class="cufon-alt">ipsum </span></span><span class="cufon cufon-canvas" style="width: 34px; height: 12px;"><canvas width="41" height="13" style="top: 0px; left: 0px;"></canvas><span class="cufon-alt">dolor </span></span><span class="cufon cufon-canvas" style="width: 18px; height: 12px;"><canvas width="25" height="13" style="top: 0px; left: 0px;"></canvas><span class="cufon-alt">sit </span></span><span class="cufon cufon-canvas" style="width: 34px; height: 12px;"><canvas width="41" height="13" style="top: 0px; left: 0px;"></canvas><span class="cufon-alt">amet </span></span><span class="cufon cufon-canvas" style="width: 39px; height: 12px;"><canvas width="44" height="13" style="top: 0px; left: 0px;"></canvas><span class="cufon-alt">consec</span></span></a></h6>
-                                                <p>
-                                                    tetuer adipiscing elit. Sed elit. Nulla sem risus, vestibulum. <a class="readmore colr" href="#">Read More</a>
-                                                </p>
-                                            </div>
-                                        </li>
-                                        <li>
-                                            <div class="date">
-                                                <p class="month">April</p>
-                                                <p class="day_date">21</p>
-                                            </div>
-                                            <div class="desc">
-                                                <h6 class="colr"><a class="colr" href="#">
-                                                        <span class="cufon cufon-canvas" style="width: 40px; height: 12px;">
-                                                            <canvas width="48" height="13" style="top: 0px; left: 0px;"></canvas>
-                                                            <span class="cufon-alt">Lorem </span></span>
-                                                        <span class="cufon cufon-canvas" style="width: 38px; height: 12px;">
-                                                            <canvas width="45" height="13" style="top: 0px; left: 0px;"></canvas>
-                                                            <span class="cufon-alt">ipsum </span></span>
-                                                        <span class="cufon cufon-canvas" style="width: 34px; height: 12px;">
-                                                            <canvas width="41" height="13" style="top: 0px; left: 0px;"></canvas>
-                                                            <span class="cufon-alt">dolor </span></span>
-                                                        <span class="cufon cufon-canvas" style="width: 18px; height: 12px;"><canvas width="25" height="13" style="top: 0px; left: 0px;"></canvas><span class="cufon-alt">sit </span></span><span class="cufon cufon-canvas" style="width: 34px; height: 12px;"><canvas width="41" height="13" style="top: 0px; left: 0px;"></canvas><span class="cufon-alt">amet </span></span><span class="cufon cufon-canvas" style="width: 39px; height: 12px;"><canvas width="44" height="13" style="top: 0px; left: 0px;"></canvas><span class="cufon-alt">consec</span></span></a></h6>
-                                                <p>
-                                                    tetuer adipiscing elit. Sed elit. Nulla sem risus, vestibulum. <a class="readmore colr" href="#">Read More</a>
-                                                </p>
-                                            </div>
-                                        </li>
-                                        <li>
-                                            <div class="date">
-                                                <p class="month">April</p>
-                                                <p class="day_date">21</p>
-                                            </div>
-                                            <div class="desc">
-                                                <h6 class="colr">
-                                                    <a class="colr" href="#">
-                                                        <span class="cufon cufon-canvas" style="width: 40px; height: 12px;">
-                                                            <canvas width="48" height="13" style="top: 0px; left: 0px;"></canvas>
-                                                            <span class="cufon-alt">Lorem </span></span>
-                                                        <span class="cufon cufon-canvas" style="width: 38px; height: 12px;">
-                                                            <canvas width="45" height="13" style="top: 0px; left: 0px;"></canvas>
-                                                            <span class="cufon-alt">ipsum </span></span>
-                                                        <span class="cufon cufon-canvas" style="width: 34px; height: 12px;">
-                                                            <canvas width="41" height="13" style="top: 0px; left: 0px;"></canvas>
-                                                            <span class="cufon-alt">dolor </span></span>
-                                                        <span class="cufon cufon-canvas" style="width: 18px; height: 12px;">
-                                                            <canvas width="25" height="13" style="top: 0px; left: 0px;"></canvas>
-                                                            <span class="cufon-alt">sit </span></span>
-                                                        <span class="cufon cufon-canvas" style="width: 34px; height: 12px;">
-                                                            <canvas width="41" height="13" style="top: 0px; left: 0px;"></canvas>
-                                                            <span class="cufon-alt">amet </span></span>
-                                                        <span class="cufon cufon-canvas" style="width: 39px; height: 12px;">
-                                                            <canvas width="44" height="13" style="top: 0px; left: 0px;"></canvas>
-                                                            <span class="cufon-alt">consec</span></span></a>
-                                                </h6>
-                                                <p>
-                                                    tetuer adipiscing elit. Sed elit. Nulla sem risus, vestibulum. <a class="readmore colr" href="#">Read More</a>
-                                                </p>
-                                            </div>
-                                        </li>
-                                    </ul>
-                                </div>
-                                <div class="sec_bottm">&nbsp;</div>
-                            </div>
-                            <div class="sec sec3">
-                                <h5 class="colr">Product2
-                                </h5>
-                                <div class="center_sec">
-                                    <ul>
-                                        <li><a href="#"><img alt="" src="images/inspiration1.gif"/></a></li>
-                                        <li><a href="#"><img alt="" src="images/inspiration2.gif"/></a></li>
-                                        <li><a href="#"><img alt="" src="images/inspiration3.gif"/></a></li>
-                                        <li class="last"><a href="#"><img alt="" src="images/inspiration4.gif"/></a></li>
-                                        <li><a href="#"><img alt="" src="images/inspiration5.gif"/></a></li>
-                                        <li><a href="#"><img alt="" src="images/inspiration6.gif"/></a></li>
-                                        <li><a href="#"><img alt="" src="images/inspiration7.gif"/></a></li>
-                                        <li class="last"><a href="#"><img alt="" src="images/inspiration8.gif"/></a></li>
-                                        <li><a href="#"><img alt="" src="images/inspiration9.gif"/></a></li>
-                                        <li><a href="#"><img alt="" src="images/inspiration10.gif"/></a></li>
-                                        <li><a href="#"><img alt="" src="images/inspiration11.gif"/></a></li>
-                                        <li class="last"><a href="#"><img alt="" src="images/inspiration12.gif"/></a></li>
-                                    </ul>
-                                    <a class="colr readmore" href="#">Read More</a>
-                                </div>
-                                <div class="sec_bottm">&nbsp;</div>
-                            </div>
-
-                        </div>
+                        
+                        
                     </div>
                     <div class="clear"></div>
 

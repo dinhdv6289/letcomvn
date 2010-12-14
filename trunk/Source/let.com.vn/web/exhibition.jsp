@@ -5,6 +5,9 @@
 --%>
 
 <%@page contentType="text/html" pageEncoding="UTF-8"%>
+<jsp:useBean id="exhibitionBean" class="letcomvn.bo.ExhibitionBO"/>
+<%@taglib uri="/WEB-INF/struts-logic.tld" prefix="logic" %>
+<%@taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c" %>
 <html xmlns="http://www.w3.org/1999/xhtml">
     <head>
         <meta content="text/html; charset=utf-8" http-equiv="Content-Type"></meta>
@@ -73,20 +76,12 @@
             <div id="content_sec">
                 <div class="inner">
                     <div class="col1">
-                        <!-- Categories -->
-                        <div class="categories">
+                        <!-- Categories 3 Level -->
+                        <div class="categoriesani">
                             <h5 class="head colr">Categories
-
                             </h5>
-                            <ul>
-                                <li class="greyback"><a href="#">Documentation</a></li>
-                                <li><a href="#">Plugins</a></li>
-                                <li class="greyback"><a href="#">Suggest Ideas</a></li>
-                                <li><a href="#">Support Forum</a></li>
-                                <li class="greyback"><a href="#">Themes</a></li>
-                                <li><a href="#">WordPress Blog</a></li>
-                                <li class="greyback"><a href="#">WordPress Planet</a></li>
-                            </ul>
+                            <!--                            menu doc-->
+                            <%@include file="includes/menuHorizontal.jsp" %>
                         </div>
                         <div class="clear"></div>
                         <!-- Recent Posts -->
@@ -198,115 +193,90 @@
                         </div>
                     </div>
                     <div class="col2">
-                        <h3 class="colr heading"><span class="cufon cufon-canvas" style="width: 36px; height: 18px;"><canvas width="43" height="19" style="top: 0px; left: 0px;"></canvas><span class="cufon-alt">Blog</span></span></h3>
+                        <h3 class="colr heading">Exhibition<span class="cufon cufon-canvas" style="width: 36px; height: 18px;"><canvas width="43" height="19" style="top: 0px; left: 0px;"></canvas><span class="cufon-alt">Blog</span></span></h3>
                         <div class="blog">
                             <ul class="bloglist">
                                 <li>
-                                    <div class="thumb">
-                                        <a href="#"><img alt="" src="images/blog1.gif"/></a>
-                                    </div>
-                                    <div class="desc">
-                                        <h2 class="colr"><span class="cufon cufon-canvas" style="width: 65px; height: 20px;"><canvas width="77" height="21" style="top: 0px; left: 0px;"></canvas><span class="cufon-alt">Lorem </span></span><span class="cufon cufon-canvas" style="width: 61px; height: 20px;"><canvas width="73" height="21" style="top: 0px; left: 0px;"></canvas><span class="cufon-alt">ipsum </span></span><span class="cufon cufon-canvas" style="width: 55px; height: 20px;"><canvas width="66" height="21" style="top: 0px; left: 0px;"></canvas><span class="cufon-alt">dolor </span></span><span class="cufon cufon-canvas" style="width: 29px; height: 20px;"><canvas width="41" height="21" style="top: 0px; left: 0px;"></canvas><span class="cufon-alt">sit </span></span><span class="cufon cufon-canvas" style="width: 62px; height: 20px;"><canvas width="74" height="21" style="top: 0px; left: 0px;"></canvas><span class="cufon-alt">amet, </span></span><span class="cufon cufon-canvas" style="width: 99px; height: 20px;"><canvas width="111" height="21" style="top: 0px; left: 0px;"></canvas><span class="cufon-alt">adipiscing </span></span><span class="cufon cufon-canvas" style="width: 38px; height: 20px;"><canvas width="50" height="21" style="top: 0px; left: 0px;"></canvas><span class="cufon-alt">elit </span></span><span class="cufon cufon-canvas" style="width: 122px; height: 20px;"><canvas width="132" height="21" style="top: 0px; left: 0px;"></canvas><span class="cufon-alt">consectetuer</span></span></h2>
-                                        <p class="posted greybtn">Posted by admin</p>
-                                        <a class="commentsbtn greybtn" href="#">1 Comment</a>
-                                        <div class="clear"></div>
-                                        <p class="text">
-                                	adipiscing elit. Sed elit. Nulla sem risus, vestibulum in, volutpat eget, dapibus ac, lectus. Curabitur dolor sapien, hendrerit non, suscipit bibendum, auctor ac, arcu. Vestibulum dapibus. Sed pede lacus, pretium in, condimentum sit amet, mollis dapibus, magna. Ut bibendum dolor nec augue...
-                                        </p>
-                                        <a class="continue colr" href="#">Continue</a>
-                                    </div>
-                                </li>
-                                <li>
-                                    <div class="thumb">
-                                        <a href="#"><img alt="" src="images/blog2.gif"/></a>
-                                    </div>
-                                    <div class="desc">
-                                        <h2 class="colr"><span class="cufon cufon-canvas" style="width: 65px; height: 20px;"><canvas width="77" height="21" style="top: 0px; left: 0px;"></canvas><span class="cufon-alt">Lorem </span></span><span class="cufon cufon-canvas" style="width: 61px; height: 20px;"><canvas width="73" height="21" style="top: 0px; left: 0px;"></canvas><span class="cufon-alt">ipsum </span></span><span class="cufon cufon-canvas" style="width: 55px; height: 20px;"><canvas width="66" height="21" style="top: 0px; left: 0px;"></canvas><span class="cufon-alt">dolor </span></span><span class="cufon cufon-canvas" style="width: 29px; height: 20px;"><canvas width="41" height="21" style="top: 0px; left: 0px;"></canvas><span class="cufon-alt">sit </span></span><span class="cufon cufon-canvas" style="width: 62px; height: 20px;"><canvas width="74" height="21" style="top: 0px; left: 0px;"></canvas><span class="cufon-alt">amet, </span></span><span class="cufon cufon-canvas" style="width: 99px; height: 20px;"><canvas width="111" height="21" style="top: 0px; left: 0px;"></canvas><span class="cufon-alt">adipiscing </span></span><span class="cufon cufon-canvas" style="width: 38px; height: 20px;"><canvas width="50" height="21" style="top: 0px; left: 0px;"></canvas><span class="cufon-alt">elit </span></span><span class="cufon cufon-canvas" style="width: 122px; height: 20px;"><canvas width="132" height="21" style="top: 0px; left: 0px;"></canvas><span class="cufon-alt">consectetuer</span></span></h2>
-                                        <p class="posted greybtn">Posted by admin</p>
-                                        <a class="commentsbtn greybtn" href="#">1 Comment</a>
-                                        <div class="clear"></div>
-                                        <p class="text">
-                                	adipiscing elit. Sed elit. Nulla sem risus, vestibulum in, volutpat eget, dapibus ac, lectus. Curabitur dolor sapien, hendrerit non, suscipit bibendum, auctor ac, arcu. Vestibulum dapibus. Sed pede lacus, pretium in, condimentum sit amet, mollis dapibus, magna. Ut bibendum dolor nec augue...
-                                        </p>
-                                        <a class="continue colr" href="#">Continue</a>
-                                    </div>
-                                </li>
-                                <li>
-                                    <div class="thumb">
-                                        <a href="#"><img alt="" src="images/blog3.gif"/></a>
-                                    </div>
-                                    <div class="desc">
-                                        <h2 class="colr"><span class="cufon cufon-canvas" style="width: 65px; height: 20px;"><canvas width="77" height="21" style="top: 0px; left: 0px;"></canvas><span class="cufon-alt">Lorem </span></span><span class="cufon cufon-canvas" style="width: 61px; height: 20px;"><canvas width="73" height="21" style="top: 0px; left: 0px;"></canvas><span class="cufon-alt">ipsum </span></span><span class="cufon cufon-canvas" style="width: 55px; height: 20px;"><canvas width="66" height="21" style="top: 0px; left: 0px;"></canvas><span class="cufon-alt">dolor </span></span><span class="cufon cufon-canvas" style="width: 29px; height: 20px;"><canvas width="41" height="21" style="top: 0px; left: 0px;"></canvas><span class="cufon-alt">sit </span></span><span class="cufon cufon-canvas" style="width: 62px; height: 20px;"><canvas width="74" height="21" style="top: 0px; left: 0px;"></canvas><span class="cufon-alt">amet, </span></span><span class="cufon cufon-canvas" style="width: 99px; height: 20px;"><canvas width="111" height="21" style="top: 0px; left: 0px;"></canvas><span class="cufon-alt">adipiscing </span></span><span class="cufon cufon-canvas" style="width: 38px; height: 20px;"><canvas width="50" height="21" style="top: 0px; left: 0px;"></canvas><span class="cufon-alt">elit </span></span><span class="cufon cufon-canvas" style="width: 122px; height: 20px;"><canvas width="132" height="21" style="top: 0px; left: 0px;"></canvas><span class="cufon-alt">consectetuer</span></span></h2>
-                                        <p class="posted greybtn">Posted by admin</p>
-                                        <a class="commentsbtn greybtn" href="#">1 Comment</a>
-                                        <div class="clear"></div>
-                                        <p class="text">
-                                	adipiscing elit. Sed elit. Nulla sem risus, vestibulum in, volutpat eget, dapibus ac, lectus. Curabitur dolor sapien, hendrerit non, suscipit bibendum, auctor ac, arcu. Vestibulum dapibus. Sed pede lacus, pretium in, condimentum sit amet, mollis dapibus, magna. Ut bibendum dolor nec augue...
-                                        </p>
-                                        <a class="continue colr" href="#">Continue</a>
-                                    </div>
-                                </li>
-                                <li>
-                                    <div class="thumb">
-                                        <a href="#"><img alt="" src="images/blog4.gif"/></a>
-                                    </div>
-                                    <div class="desc">
-                                        <h2 class="colr"><span class="cufon cufon-canvas" style="width: 65px; height: 20px;"><canvas width="77" height="21" style="top: 0px; left: 0px;"></canvas><span class="cufon-alt">Lorem </span></span><span class="cufon cufon-canvas" style="width: 61px; height: 20px;"><canvas width="73" height="21" style="top: 0px; left: 0px;"></canvas><span class="cufon-alt">ipsum </span></span><span class="cufon cufon-canvas" style="width: 55px; height: 20px;"><canvas width="66" height="21" style="top: 0px; left: 0px;"></canvas><span class="cufon-alt">dolor </span></span><span class="cufon cufon-canvas" style="width: 29px; height: 20px;"><canvas width="41" height="21" style="top: 0px; left: 0px;"></canvas><span class="cufon-alt">sit </span></span><span class="cufon cufon-canvas" style="width: 62px; height: 20px;"><canvas width="74" height="21" style="top: 0px; left: 0px;"></canvas><span class="cufon-alt">amet, </span></span><span class="cufon cufon-canvas" style="width: 99px; height: 20px;"><canvas width="111" height="21" style="top: 0px; left: 0px;"></canvas><span class="cufon-alt">adipiscing </span></span><span class="cufon cufon-canvas" style="width: 38px; height: 20px;"><canvas width="50" height="21" style="top: 0px; left: 0px;"></canvas><span class="cufon-alt">elit </span></span><span class="cufon cufon-canvas" style="width: 122px; height: 20px;"><canvas width="132" height="21" style="top: 0px; left: 0px;"></canvas><span class="cufon-alt">consectetuer</span></span></h2>
-                                        <p class="posted greybtn">Posted by admin</p>
-                                        <a class="commentsbtn greybtn" href="#">1 Comment</a>
-                                        <div class="clear"></div>
-                                        <p class="text">
-                                	adipiscing elit. Sed elit. Nulla sem risus, vestibulum in, volutpat eget, dapibus ac, lectus. Curabitur dolor sapien, hendrerit non, suscipit bibendum, auctor ac, arcu. Vestibulum dapibus. Sed pede lacus, pretium in, condimentum sit amet, mollis dapibus, magna. Ut bibendum dolor nec augue...
-                                        </p>
-                                        <a class="continue colr" href="#">Continue</a>
-                                    </div>
-                                </li>
-                            </ul>
-                            <div class="clear"></div>
-                            <div class="paging">
-                                <ul>
-                                    <li class="first"><a href="#">First</a></li>
-                                    <li class="prev"><a href="#">&nbsp;</a></li>
-                                    <li><a href="#">1</a></li>
-                                    <li><a href="#">2</a></li>
-                                    <li><a href="#">3</a></li>
-                                    <li><a href="#">4</a></li>
-                                    <li class="next"><a href="#">&nbsp;</a></li>
-                                    <li class="last"><a href="#">Last</a></li>
-                                </ul>
-                            </div>
-                        </div>
+                                    <table border="0" width="500px" >
+                                        <thead>
+                                            <tr>
+                                                <th>Exhibitions</th>
+                                                <th>Time</th>
+                                                <th>Place</th>
+                                            </tr>
+                                        </thead>
+                                        <c:if test="${exhibitionBean.exhibitionList==null}">
+                                            There are not Exhibition!
+                                        </c:if>
+                                        <c:if test="${exhibitionBean.exhibitionList!=null}">
+                                            
+                                                <tbody >
+                                                    <c:forEach var="exhiData" items="${exhibitionBean.exhibitionList}">
+                                                  <tr >
+                                                      <td>${exhiData.exhibitionName}</td>
+                                                      <td>${exhiData.exhibitionTime}</td>
+                                                      <td>${exhiData.exhibitionPlace}</td>
+                                                  </tr>
+                                                  </c:forEach>
+                                              </tbody>
+                                              
+                                    </c:if>
+                                </table>
+                                    <br/>
+                                    <br/>
+                                    <p>
+                                        <img src="exhibitionImages/s.jpg" style="margin:0 20px 0 40px" />
+                                        <img src="exhibitionImages/ex.jpg"/>
+                                    </p>
+                                    <br/>
+                                    <p>
+                                    <h5 style="color:red;font-weight:bold;">SEMINAR: LASER TECHNOLOGY IN PRECISE METAL PROCESSING </h5>
+                                    <p style="margin:10px 0">Hanoi, 24.06.2010</p>
+                                        Laser Equipment & Technology Co., Ltd (LET) cooperated with Institute for Technology Development, Media and Community Assistance (IMC) to successfully organize a serminar about Laser Technology in Precise Metal Processing. LET introduce about laser marking, welding, cutting and drilling technology and innovative equipment from ACI Laser GmbH, Alpha Laser GmbH, LASAG Swizerland to specialists in precise metal working in Vietnam.
+                                        <br/>
+                                        <img src="exhibitionImages/s2.jpg" style="margin:20px 50px"/>
+                                        <img src="exhibitionImages/s3.jpg" style="margin:0 50px 20px"/>
+                                        <img src="exhibitionImages/s4.jpg" style="margin:0 50px 20px"/>
+                                        <img src="exhibitionImages/s5.jpg" style="margin:0 50px 20px"/>
+                                        <img src="exhibitionImages/s6.jpg" style="margin:0 50px 20px"/>
+                                        <img src="exhibitionImages/s8.jpg" style="margin:0 50px 20px"/>
+                                    </p>
+                            </li>
+                        </ul>
+                        <div class="clear"></div>
+                        
                     </div>
-                    <div class="clear"></div>
                 </div>
                 <div class="clear"></div>
-                <div class="content_botm">&nbsp;</div>
             </div>
             <div class="clear"></div>
-            <!-- Footer -->
-            <%@include file="includes/footer.jsp" %>
+            <div class="content_botm">&nbsp;</div>
         </div>
-        <div id="fancybox-tmp"></div><div id="fancybox-loading">
-            <div></div></div>
-        <div id="fancybox-overlay"></div>
-        <div id="fancybox-wrap">
-            <div id="fancybox-outer">
-                <div id="fancy-bg-n" class="fancy-bg"></div>
-                <div id="fancy-bg-ne" class="fancy-bg"></div>
-                <div id="fancy-bg-e" class="fancy-bg"></div>
-                <div id="fancy-bg-se" class="fancy-bg"></div>
-                <div id="fancy-bg-s" class="fancy-bg"></div>
-                <div id="fancy-bg-sw" class="fancy-bg"></div>
-                <div id="fancy-bg-w" class="fancy-bg"></div>
-                <div id="fancy-bg-nw" class="fancy-bg"></div>
-                <div id="fancybox-inner"></div>
-                <a id="fancybox-close"></a>
-                <a id="fancybox-left" href="javascript:;">
-                    <span id="fancybox-left-ico" class="fancy-ico"></span>
-                </a><a id="fancybox-right" href="javascript:;">
-                    <span id="fancybox-right-ico" class="fancy-ico"></span>
-                </a>
-            </div>
+        <div class="clear"></div>
+        <!-- Footer -->
+        <%@include file="includes/footer.jsp" %>
+    </div>
+    <div id="fancybox-tmp"></div><div id="fancybox-loading">
+        <div></div></div>
+    <div id="fancybox-overlay"></div>
+    <div id="fancybox-wrap">
+        <div id="fancybox-outer">
+            <div id="fancy-bg-n" class="fancy-bg"></div>
+            <div id="fancy-bg-ne" class="fancy-bg"></div>
+            <div id="fancy-bg-e" class="fancy-bg"></div>
+            <div id="fancy-bg-se" class="fancy-bg"></div>
+            <div id="fancy-bg-s" class="fancy-bg"></div>
+            <div id="fancy-bg-sw" class="fancy-bg"></div>
+            <div id="fancy-bg-w" class="fancy-bg"></div>
+            <div id="fancy-bg-nw" class="fancy-bg"></div>
+            <div id="fancybox-inner"></div>
+            <a id="fancybox-close"></a>
+            <a id="fancybox-left" href="javascript:;">
+                <span id="fancybox-left-ico" class="fancy-ico"></span>
+            </a><a id="fancybox-right" href="javascript:;">
+                <span id="fancybox-right-ico" class="fancy-ico"></span>
+            </a>
         </div>
-    </body>
+    </div>
+</body>
 </html>
