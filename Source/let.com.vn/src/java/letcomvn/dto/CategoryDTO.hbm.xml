@@ -6,7 +6,6 @@
       <column name="categoryID"/>
       <generator class="identity"/>
     </id>
-
     <property name="categoryName" type="string">
       <column length="50" name="categoryName" not-null="true"/>
     </property>
@@ -14,7 +13,7 @@
       <column name="description"/>
     </property>
     <property name="priorityDisplay" type="int">
-        <column name="priorityDisplay"/>
+      <column name="priorityDisplay"/>
     </property>
     <set inverse="true" name="products">
       <key>
